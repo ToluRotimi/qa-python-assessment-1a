@@ -32,10 +32,15 @@
 # <HINT>
 
 # What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
-
-
 def one(input1, input2):
-    return ""
+    if len(input1) == len(input2):
+        return input1,'', input2
+    elif len(input1) > len(input2):
+        return input1
+    elif len(input2) > len(input1):
+        return input2
+    else:
+        return 'incorrect submission'
 
    # <QUESTION 2>
 
@@ -61,7 +66,13 @@ def one(input1, input2):
 
 
 def two(input):
-    return ""
+    lowercase = input.lower
+    print(lowercase)
+    if lowercase == 'bert' * 2:
+        word = lowercase.split('bert')
+        return word
+    else:
+        return ""
 
 
     # <QUESTION 3>
@@ -85,7 +96,14 @@ def two(input):
 
 
 def three(arg1):
-    return ""
+    if arg1 // 3:
+        return 'fizz'
+    if arg1 // 5:
+        return 'buzz'
+    if arg1 // 3  and arg1 // 5:
+        return 'fizzbuzz'
+    else:
+        return "null"
 
     # <QUESTION 4>
 
@@ -101,7 +119,7 @@ def three(arg1):
 
     # <EXAMPLES>
 
-    # four("55 72 86") → 14
+    #four("55 72 86") → 14
     # four("15 72 80 164") → 11
     # four("555 72 86 45 10") → 15
 
@@ -111,7 +129,12 @@ def three(arg1):
 
 
 def four(arg1):
-    return ""
+    print(int(arg1))
+    number=[]
+    for num in number.split:
+        total = num + num
+        number = total.append
+    return max(number)
 
     # <QUESTION 5>
 
@@ -140,7 +163,10 @@ def four(arg1):
 
 
 def five(input):
-    return ""
+    if input[2] == 'False'  :
+        print(input[0])
+    else:
+        return ""
 
     # <QUESTION 6>
 
@@ -161,7 +187,17 @@ def five(input):
 
 
 def six(input):
-    return ""
+    for char in range (input):
+        if char in input == 'cei':
+            print(True)
+        elif char in input == 'ei':
+            print(False)
+        if char in input == 'cie':
+            print(False)
+        elif char in input == 'ie':
+            print (True)
+        else:
+            return ""
 
     # <QUESTION 7>
 
@@ -179,7 +215,12 @@ def six(input):
 
 
 def seven(input):
-    return ""
+    input.lower()
+    count = 0 
+    for i in input:
+        if (i == 'a' or i == 'e' or i == 'i' or 'i'== 'u'):
+            count = count + 1
+    return count
 
     # <QUESTION 8>
 
@@ -198,7 +239,16 @@ def seven(input):
 
 
 def eight(input):
-    return ""
+    if input < 0:
+        return 0
+    elif input == 1 or input == 0:
+        return 1
+    else:
+        x = 1
+        while (input > 1):
+            x *= input
+            input -= 1
+    return x
 
     # <QUESTION 9>
 
